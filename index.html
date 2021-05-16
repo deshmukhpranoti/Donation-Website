@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="My logo-3.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">OUR CAMPAIGNS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1> Small Efforts Make Big Change</h1>
+            <p>Volunteers do not necessarily have the time they just have the heart</p>
+
+
+
+             <button class="hero-btn" id="rzp-button1">Donate</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_wUTBTVLOr765L0", // Enter the Key ID generated from the Dashboard
+    "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Awaz Organization",
+    "description": "Test Transaction",
+    "image": "http://localhost:63342/placement website/transactionlogo1.png?_ijt=renbk68sovkuer4m0tg12km3n5",
+    "handler": function (response){
+        console.log(response);
+    }
+};
+var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <!----------------------------OUR Initiatives------------------------------------>
+    <section class="course">
+        <h1> Our Initiatives</h1>
+        <p> Following are our initiatives which help the community</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3> Dignity for work</h3>
+                <p>Worldwide when we think of resources for any kind of development work, we think of money. Awaz works on turning old material as a resource for hundreds of rural development activities.</p>
+
+            </div>
+             <div class="course-col">
+                <h3> School to School</h3>
+                <p>School to School initiative is addressing the educational needs of thousands of remote & resource starved village/ slum schools</p>
+
+            </div>
+
+             <div class="course-col">
+                <h3>Reuse</h3>
+                <p>A brand built around reusing and up-cycling even the last shreds of material that Awaz receives. A range of over 100 different products like purses, fancy bags, file folder, mats etc. made out of torn jeans,unused clothes.</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-------------------------------------Our Mission----------------------------->
+    <section class="campus">
+        <h1>Our Mission</h1>
+        <p>our mission is to make a better world for the community</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="image3original.jpg">
+                <div class="layer">
+                    <h3>Work as a catalyst in bringing sustainable change</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="image4original.jpg">
+                <div class="layer">
+                    <h3> engage proactively in the change process</h3>
+                </div>
+            </div>
+
+
+            <div class="campus-col">
+                <img src="image6original.jpg">
+                <div class="layer">
+                    <h3>Adopt highest standards of governance</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!------------------------------------------------------How to help----------------------------------->
+    <section class="facilities">
+        <h1> How to help?</h1>
+        <p>How you can volunteer and can help in our mission</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="searchoriginal1.png">
+                <h3>Search campaign</h3>
+                <p>Our organization arranges campaigns you find and take part in one of the campaign and help us </p>
+            </div>
+
+
+
+            <div class="facilities-col">
+                <img src="donateoriginal.png">
+                <h3>Donation</h3>
+                <p>You can help us with the donations a small donation can cause big impact</p>
+            </div>
+
+
+
+
+            <div class="facilities-col">
+                <img src="sharingoriginal.png">
+                <h3>Sharing</h3>
+                <p>Share about our organization with people and help us to connect with more people</p>
+            </div>
+
+
+
+            <div class="facilities-col">
+                <img src="childoriginal.png">
+                <h3>Help</h3>
+                <p>Our Organization helps to make a better community and it will be impossible without your help</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!----------------------testimonials------------------------------->
+    <section class="testimonials">
+        <h1>What people say?  </h1>
+        <p> waht people say about our organization</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="testimonial1.jpg">
+                <div>
+                    <p>"In the journey with Awaz Organization. I have actually seen desires been converted in to realty. It's a great Privileged to be a Part of this organization, The Philanthropic work creates a great Influence on Society and Changing Minds of people for a brighter future of the Underprivileged children's. Hope you create MILESTONES ahead. Good Luck."</p>
+                    <h3> B.K.Das</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial-col">
+                <img src="testimonial2.jpg">
+                <div>
+                    <p>"I'm fortunate to have been part of Awaz Organization and really happy to see outstanding work done by them. Everyone live their life for themselves, their family, friends and relatives but life is complete if we live for others too."</p>
+                    <h3> G.M.Sharma</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <!------------------------------------Call to action---------------------->
+    <section class="cta">
+        <h1>Get in touch with us</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-------------------------Footer----------------------------->
+    <section class="footer">
+        <h4> About Us</h4>
+        <p>Awaz was established by a team of social workers who are working in the field of health, education, sustainability,<br> vocational training, empowering women and child development. our organization works among migrants, poor <br> and abused women, neglected children,senior citizens, school drop outs, self Help Groups, and awareness on<br> various social, health and current issues. The underprivileged need to be given the appropriate opportunities <br> and they need to be motivated. We works with a view to help the poor community through various welfare activities. </p>
+
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------javascript--------------------------------->
+<script>
+
+var navLinks=document.getElementById("navLinks")
+function showMenu(){
+navLinks.style.right="0";
+}
+
+function hideMenu(){
+navLinks.style.right="-200px";
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
