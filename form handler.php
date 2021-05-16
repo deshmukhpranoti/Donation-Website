@@ -3,7 +3,7 @@ $name=$_POST['name'];
 $visitor_email=$_POST['email'];
 $message=$_POST['message'];
 
-$email_from ='awazorganization@gmail.com';
+$email_from ='https://donation-website24.herokuapp.com/';
 $email_subject='New Form Submission';
 $email_body="User Name: $name.\n".
              "User Email: $visitor_email.\n".
